@@ -1,7 +1,12 @@
 ## Battleships project
 
 This is a joint project between [Joe](https://github.com/jjnewman/battleships) and [Gabe](https://github.com/GabeMaker/battleships) using GitHub pong
-Currently at MVP 2 - able to play one player game in irb.
+
+Currently at MVP 3:
+- 2 players
+- Either player can win
+- Game objects call the :end_turn method (this checks the win status). When playing in irb, a player can do this manually.
+
 
 
 Battleships (or Battleship) is a game where each player has a board upon which they can place a number of ships.
