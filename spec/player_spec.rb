@@ -21,6 +21,12 @@ describe Player do
     player.place(batttleship, "a1", :vertical)
   end 
 
+  it 'can identify opponents board' do
+    player1 = Player.new
+    player1.add_opponent board2
+    expect(player1.opponents_board).to eq board2
+  end
+
   it 'can shoot at opponents board' do
     player1 = Player.new
     player1.add_board board1
